@@ -1,0 +1,542 @@
+:root {
+  --color-primary-font: #959595;
+  --color-secondary-font: #ffffff;
+  --color-third-font: #222626;
+  --color-bg-alter: #808080;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: var(--color-primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__title::first-letter,
+.start__title::first-letter,
+.services__title::first-letter,
+.details__title::first-letter,
+.proposal__title::first-letter,
+.onboard__title::first-letter,
+.details__subtitle::first-letter,
+.onboard__subtitle::first-letter,
+.plan__name::first-letter,
+.footer__title::first-letter {
+  text-transform: uppercase;
+}
+
+.start__item,
+.services__item,
+.details__item,
+.onboard__item,
+.plan__icon-item,
+.footer__item {
+  list-style: none;
+}
+
+.services__link,
+.proposal__link {
+  text-decoration: none;
+}
+
+.services__link--big-letter,
+.proposal__link--big-letter {
+  text-transform: uppercase;
+}
+
+.header__link-vertical,
+.onboard__link-vertical,
+.details__link-vertical {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-secondary-font);
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+
+.plan__link-vertical,
+.details__link-vertical {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-primary-font);
+  font-weight: 600;
+  position: absolute;
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+
+.header__link-vertical {
+  position: relative;
+  top: 110px;
+}
+
+.details__link-vertical,
+.onboard__link-vertical,
+.plan__link-vertical {
+  position: relative;
+  top: 60px;
+}
+
+.plan__link-vertical {
+  position: relative;
+  top: 100px;
+}
+.start__title,
+.details__title {
+  font-size: 35px;
+  line-height: 0.68;
+  color: var(--color-third-font);
+  font-weight: 300;
+}
+
+.services__link,
+.proposal__link,
+.onboard__link-vertical {
+  font-weight: 700;
+  color: var(--color-secondary-font);
+}
+
+.details__subtitle,
+.onboard__subtitle {
+  font-weight: 600;
+  line-height: 1.84;
+  margin-bottom: 15px;
+}
+
+/* header */
+.header {
+  background-color: var(--color-bg-alter);
+  background-image: url(../images/man-on-the-background-of-the-mountains.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 335px 0 490px;
+  color: var(--color-secondary-font);
+}
+
+.header__brand-logo {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 350px;
+}
+
+.header__mark {
+  width: 50px;
+  height: 50px;
+  --color-primary: transparent;
+  --color-secondary: #ffffff;
+  background-color: transparent;
+  background-image: radial-gradient(
+    circle at center,
+    var(--color-primary) 15%,
+    var(--color-secondary) 15%,
+    var(--color-secondary) 25%,
+    var(--color-primary) 25%,
+    var(--color-primary) 45%,
+    var(--color-secondary) 45%,
+    var(--color-secondary) 55%,
+    var(--color-primary) 55%,
+    var(--color-primary) 65%
+  );
+}
+
+.header__logo {
+  font-size: 27px;
+  font-style: italic;
+  line-height: 1.62;
+}
+
+.header__link {
+  color: var(--color-secondary-font);
+}
+
+.header__link--bold {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.header__text {
+  line-height: 2;
+}
+/* header */
+
+/* start something new section */
+.start__img {
+  position: absolute;
+  top: 230px;
+  right: 340px;
+  max-width: 100%;
+  height: auto;
+}
+.start {
+  padding: 100px 0 100px 0;
+}
+.start__items {
+  --space-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-gap);
+  margin-top: 30px;
+}
+
+.start__item {
+  flex-basis: calc((100% - 1 * var(--space-gap)) / 2);
+}
+.start__content {
+  line-height: 1.71;
+}
+/* start something new section */
+
+/* services section */
+
+.services__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__item {
+  padding: 40px 50px 40px 50px;
+  color: var(--color-secondary-font);
+}
+.services__title {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.services__content {
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+.services__item:nth-child(1) {
+  --color-bg: #f5989d;
+  background-color: var(--color-bg);
+}
+
+.services__item:nth-child(2) {
+  --color-bg: #615f7d;
+  background-color: var(--color-bg);
+}
+
+.services__item:nth-child(3) {
+  background-color: var(--color-bg-alter);
+  background-image: url(../images/photographer-on-the-background-of-a-frozen-lake.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.services__item:nth-child(4) {
+  background-color: var(--color-bg-alter);
+  background-image: url(../images/person-in-the-mouintans-in-the-winter.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 213px 40px 50px;
+}
+
+.services__item:nth-child(5) {
+  --color-bg: #82ca9c;
+  background-color: var(--color-bg);
+}
+
+.services__item:nth-child(6) {
+  --color-bg: purple;
+  background-color: var(--color-bg);
+}
+
+.services__item:nth-child(7) {
+  background-color: var(--color-bg-alter);
+  background-image: url(../images/woolen-pattern.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 213px 40px 50px;
+}
+
+.services__link-arrow {
+  margin-left: 10px;
+}
+
+.services__item:hover,
+.services__item:focus {
+  opacity: 0.9;
+}
+
+.services__icon-primary {
+  position: relative;
+  top: 5px;
+  left: 130px;
+}
+
+.services__icon-secondary {
+  position: relative;
+  top: 5px;
+  left: 460px;
+}
+
+.services__icon-primary,
+.services__icon-secondary {
+  font-size: 25px;
+}
+/* services section */
+
+/*details section*/
+.details {
+  padding: 100px 0 200px 0;
+}
+
+.details__title {
+  margin-bottom: 40px;
+}
+
+.details__content {
+  line-height: 1.71;
+}
+.details__items {
+  --space-gap: 30px;
+  display: flex;
+  gap: var(--space-gap);
+}
+
+.details__item {
+  flex-basis: calc((100% - 3 * var(--space-gap)) / 4);
+}
+/*details section*/
+
+/*proposal section*/
+.proposal {
+  padding: 445px 0 160px 0;
+  background-color: var(--color-bg-alter);
+  background-image: url("../images/dashboard-of-an-old-car-with-the-inscription-power.jpg");
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.proposal__title {
+  font-size: 60px;
+  line-height: 1.2;
+  color: var(--color-secondary-font);
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.proposal__content {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: var(--color-secondary-font);
+}
+
+.proposal__link-arrow {
+  margin-left: 20px;
+}
+/*proposal section*/
+
+/*reasons to get onboard section */
+.onboard {
+  --color-onboard-bg: #82ca9c;
+  background: var(--color-onboard-bg);
+  color: var(--color-secondary-font);
+  padding: 100px 0 150px 0;
+}
+
+.onboard__title {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: var(--color-secondary-font);
+}
+
+.onboard__content {
+  line-height: 1.71;
+}
+
+.obnboard__items {
+  --space-gap: 30px;
+  display: flex;
+  gap: var(--space-gap);
+}
+
+.obnboard__item {
+  flex-basis: calc((100% - 2 * var(--space-gap)) / 3);
+}
+/*reasons to get onboard section */
+
+/*choose the plan section*/
+.plan {
+  --color-plan-bg: #f6f7fa;
+  background-color: var(--color-plan-bg);
+  padding: 100px 0 150px 0;
+}
+
+.plan__container {
+  display: flex;
+}
+
+.plan__wrapper {
+  padding: 40px 80px 40px 40px;
+}
+
+.plan__wrapper:hover,
+.plan__wrapper:focus {
+  --color-bg: #ffffff;
+  background-color: var(--color-bg);
+  box-shadow: 0 0 20px -10px;
+}
+
+.plan__title {
+  --color--plan-title-bg: #e1e1e1;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--color-secondary-font);
+  line-height: 2;
+  font-weight: 800;
+  padding: 0 15px 0 15px;
+  background-color: var(--color--plan-title-bg);
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.plan__name,
+.plan__name--capitalize {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: var(--color-third-font);
+  margin-bottom: 20px;
+}
+
+.plan__name--capitalize {
+  text-transform: capitalize;
+}
+
+.plan__content {
+  --color-font: #8b9ead;
+  font-size: 14px;
+  line-height: 1.78;
+  color: var(--color-font);
+  margin-bottom: 15px;
+}
+
+.plan__btn {
+  --color-btn-bg: #82ca9c;
+  font-size: 13px;
+  line-height: 1.69;
+  font-weight: 700;
+  padding: 10px 25px 10px 25px;
+  text-transform: uppercase;
+  background-color: var(--color-btn-bg);
+  color: var(--color-secondary-font);
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.plan__btn:hover,
+.plan__btn:focus {
+  cursor: pointer;
+}
+
+.plan__icon-items {
+  display: flex;
+}
+.plan__icons {
+  width: 25px;
+  height: 25px;
+}
+
+.plan__icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.plan__icon-item {
+  --color--plan-title-bg: #cccccc;
+  fill: var(--color--plan-title-bg);
+}
+/*choose the plan section*/
+/*footer*/
+.footer {
+  --color-footer-bg: #192431;
+  --color-font: #d8d8d8;
+  font-size: 13px;
+  line-height: 1.84;
+  background-color: var(--color-footer-bg);
+  color: var(--color-font);
+  padding: 100px 0 50px 0;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__wrapper {
+  margin-right: 70px;
+  margin-bottom: 20px;
+}
+.footer__title {
+  margin-bottom: 15px;
+}
+
+.footer__item {
+  text-transform: capitalize;
+}
+
+.footer__item--lowercase {
+  text-transform: lowercase;
+}
+
+.footer__title--uppercase {
+  text-transform: uppercase;
+}
+
+.footer form {
+  display: flex;
+  margin-bottom: 10px;
+}
+.footer__wrapper input {
+  width: 400px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+}
+
+.footer__form-text {
+  color: var(--color-primary-font);
+}
+
+.footer__btn {
+  background-color: transparent;
+  border: none;
+  height: 56px;
+  width: auto;
+  margin-left: -8px;
+}
+
+.footer__btn:hover,
+.footer__btn:focus {
+  cursor: pointer;
+}
+
+/*footer*/
+
