@@ -81,7 +81,8 @@ ul {
 
 .header__link-vertical {
   position: relative;
-  top: 110px;
+  top: 160px;
+  /*right: 320px;*/
 }
 
 .details__link-vertical,
@@ -126,13 +127,16 @@ ul {
   background-repeat: no-repeat;
   padding: 335px 0 490px;
   color: var(--color-secondary-font);
+  position: relative;
 }
-
+.header__wrapper {
+  position: absolute;
+}
 .header__brand-logo {
   display: flex;
-  position: absolute;
-  top: 50px;
-  left: 350px;
+  position: relative;
+  bottom: 310px;
+  left: 0;
 }
 
 .header__mark {
@@ -180,19 +184,22 @@ ul {
 .header__text {
   line-height: 2;
 }
+
+.header__img {
+  position: absolute;
+  bottom: -430px;
+  left: 620px;
+  max-width: 130%;
+  height: auto;
+}
 /* header */
 
 /* start something new section */
-.start__img {
-  position: absolute;
-  top: 230px;
-  right: 340px;
-  max-width: 100%;
-  height: auto;
-}
+
 .start {
   padding: 100px 0 100px 0;
 }
+
 .start__items {
   --space-gap: 20px;
   display: flex;
